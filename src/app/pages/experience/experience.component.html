@@ -1,0 +1,19 @@
+<div class="experience-setup">
+    <div class="container">
+        <div class="col">
+            <div class="rw1">
+                <img src="assets/icons/experience.svg" alt="">
+                <header>My Experience</header>
+            </div>
+            <div class="contain">
+                @for (experience of experiences; track $index) {
+                    <div class="col-1">
+                        <p>{{ experience.startedYear }} - {{ experience.endYear }}</p>
+                        <h3>{{ experience.role }}</h3>
+                        <h4>{{ experience.company }} [{{ experience.jobType }}], {{ experience.Location }}</h4>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>

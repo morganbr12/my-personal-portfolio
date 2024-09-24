@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 .service-setup {
     margin: 0px;
     padding: auto;
@@ -52,9 +54,10 @@
                     }
 
                     .rw1 {
+                        padding: 10px 0px;
 
                         .numbers {
-                            font-family: Montserrat;
+                            font-family: "Montserrat";
                             font-size: 25px;
                             font-weight: 900;
                             line-height: 30.48px;

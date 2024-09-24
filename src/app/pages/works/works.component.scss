@@ -1,8 +1,10 @@
 .work-setup {
     margin: 0;
-    padding: auto;
+    padding: 0;
     z-index: 1000;
-    box-sizing: 0px;
+    box-sizing: border-box;
+    background-image: url("/../assets/work/my-recent-works.svg");
+    background-size: cover;
 
     .container {
         padding: 40px 60px;
@@ -16,31 +18,35 @@
                 font-family: "Nexa";
                 font-size: 60px;
                 font-weight: 900;
-                line-height: 90.96px;
-                text-align: left;
+                line-height: 60px; 
+                text-align: center;
                 background: linear-gradient(270deg, #DFD1FD 32.82%, #8D58F8 79.38%);
                 background-clip: text;
+                -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
+                margin-bottom: 10px; 
             }
 
             p {
                 font-size: 20px;
                 font-weight: 400;
-                line-height: 30px;
+                line-height: 20px;
                 text-align: center;
-
+                margin-bottom: 20px;
             }
 
             .contain {
                 background: rgba(15, 7, 21, 1);
                 border-radius: 50px;
-                margin-top: 20px;
+                margin-bottom: 20px;
 
                 .rw1 {
-                    
+                    display: flex;
+                    justify-content: center; 
+                    flex-wrap: wrap;
 
                     .type {
-                        font-size: 20px;
+                        font-size: 18px;
                         font-weight: 400;
                         line-height: 30px;
                         text-align: center;
@@ -61,19 +67,28 @@
             }
 
             .contains {
-                
+                display: flex;
+                justify-content: center; 
+                margin-top: 20px;
+
                 .rw3 {
                     display: grid;
-                    grid-template-columns: repeat(2, 1fr);
-                    gap: 16px;
+                    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr)); 
+                    gap: 24px; 
+                    width: 100%; 
 
                     .wk {
+                        background: linear-gradient(270deg, #000 32.82%, #8D58F8 79.38%);; 
+                        padding: 0px 20px; 
+                        border-radius: 10px; 
+                        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
 
-                        .img {
+                        img {
                             width: 100%;
-                            height: 392px;
-                            opacity: 1px;
-                            border-radius: 10px 0px 0px 0px;
+                            height: 100%;
+                            opacity: 1; 
+                            border-radius: 10px; 
+                            object-fit: cover;
                         }
                     }
                 }

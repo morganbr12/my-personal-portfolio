@@ -34,7 +34,7 @@ export class WorksComponent {
     {
       workType: "UI/UX",
       workTitle: "delivery",
-      workThumbnail: "assets/work/deliver.png",
+      workThumbnail: "assets/work/deliver-app.png",
       workDescription: "",
     },
     {
