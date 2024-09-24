@@ -1,0 +1,122 @@
+.contact-section {
+    background-color: #0f0715;
+    color: white;
+    padding: 50px 0;
+  
+    .container {
+      display: flex;
+      justify-content: center;
+      gap: 100px;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+  
+    .form-container {
+      background-color: #1b1223;
+      padding: 30px;
+      border-radius: 12px;
+      max-width: 500px;
+      width: 100%;
+  
+      h2 {
+        font-size: 36px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        background: linear-gradient(270deg, #DFD1FD 32.82%, #8D58F8 79.38%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-align: center;
+      }
+  
+      p {
+        font-size: 14px;
+        margin-bottom: 20px;
+        color: #cccccc;
+        text-align: center;
+      }
+  
+      form {
+        display: flex;
+        flex-direction: column;
+  
+        .input-row {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 20px;
+  
+          input,
+          select,
+          textarea {
+            background-color: #1b1223;
+            border: 1px solid #8d58f8;
+            padding: 10px;
+            border-radius: 8px;
+            width: 100%;
+            color: white;
+            font-size: 14px;
+            margin-right: 10px;
+          }
+  
+          input:last-child,
+          select:last-child,
+          textarea:last-child {
+            margin-right: 0;
+          }
+  
+          textarea {
+            resize: none;
+            height: 120px;
+          }
+        }
+  
+        button {
+          background-color: #8d58f8;
+          border: none;
+          color: white;
+          padding: 15px 0;
+          border-radius: 8px;
+          cursor: pointer;
+          font-size: 16px;
+          transition: background-color 0.3s ease;
+  
+          &:hover {
+            background-color: #7041cf;
+          }
+        }
+      }
+    }
+  
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      max-width: 300px;
+  
+      .rw1 {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        gap: 20px;
+  
+        i {
+          font-size: 24px;
+          margin-right: 10px;
+          color: #8d58f8;
+        }
+  
+        div {
+          strong {
+            font-size: 18px;
+          }
+  
+          p {
+            font-size: 14px;
+            color: #cccccc;
+          }
+        }
+      }
+    }
+  }
+  

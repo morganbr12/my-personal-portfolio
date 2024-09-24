@@ -73,15 +73,21 @@
 
                 .rw3 {
                     display: grid;
-                    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr)); 
-                    gap: 24px; 
+                    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); 
+                    gap: 54px; 
                     width: 100%; 
 
                     .wk {
-                        background: linear-gradient(270deg, #000 32.82%, #8D58F8 79.38%);; 
+                        background: linear-gradient(270deg, #2E165A 32.82%, #8a60df 59.38%);; 
                         padding: 0px 20px; 
                         border-radius: 10px; 
                         box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+                        
+                        &:hover {
+                            padding: 0px 10px;  
+                            cursor: pointer;
+                            overflow: hidden;
+                        }
 
                         img {
                             width: 100%;

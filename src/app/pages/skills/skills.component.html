@@ -1,0 +1,22 @@
+<div class="skills-setup">
+    <div class="container">
+        <div class="col">
+            <header>My Skills</header>
+            <p>Grapic and UI designer creating captivating, functional experiences</p>
+
+            <div class="contain">
+                @for (skill of skills; track $index) {
+                    <div class="col-1">
+                        <div class="con">
+                            <img [src]="skill.icon" alt="">
+                            <div class="percent">{{skill.percent}}%</div>
+                        </div>
+                        <div class="language">
+                            <h2>{{skill.language}}</h2>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>

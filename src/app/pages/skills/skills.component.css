@@ -1,0 +1,91 @@
+.skills-setup {
+    margin: 0px;
+    padding: auto;
+    box-sizing: border-box;
+    background-image: url("/../assets/work/my-skills.svg");
+    background-size: cover;
+
+    .container {
+        padding: 40px 300px;
+
+
+        .col {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            header {
+                background: linear-gradient(270deg, #DFD1FD 32.82%, #8D58F8 79.38%);
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                font-family: "Nexa";
+                font-weight: 900;
+                font-size: 60px;
+                text-align: left;
+                line-height: 90.96px;
+            }
+
+            p {
+                font-weight: 400;
+                font-size: 20px;
+                text-align: center;
+                line-height: 30px;
+                color: white;
+            }
+
+
+            .contain {
+                margin-top: 40px;
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 4fr));
+                /* gap: 15px;  */
+                width: 100%; 
+                justify-content: center;
+                align-items: center;
+
+
+                .col-1 {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    .con {
+                        height: 223px;
+                        width: 230px;
+                        background-color: rgba(42, 20, 84, 1);
+                        box-shadow: 1px 1px 1px solid rgba(42, 20, 84, 1);
+                        border-radius: 15px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+
+                        img {
+                            height: 100px;
+                            width: 100px;
+                            margin-bottom: 20px;
+                        }
+
+                        .percent {
+                            font-weight: 600;
+                            font-size: 40px;
+                            text-align: center;
+                            line-height: 60px;
+                            color: white;
+                        }
+                    }
+
+                    .language {
+                        font-weight: 400;
+                        font-size: 20px;
+                        text-align: center;
+                        line-height: 30px;
+                        color: rgba(189, 157, 255, 1);
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
