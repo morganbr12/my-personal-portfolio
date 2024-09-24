@@ -1,0 +1,28 @@
+<div class="work-setup">
+    <div class="container">
+        <div class="col">
+            <header>My Recent Works</header>
+            <p>Take a moment to review my recent works</p>
+            <div class="contain">
+                <div class="rw1">
+                    @for (workType of workTypes; track $index) {
+                        <div class="type" (click)="onWorkTypeSelected(workType, $index)" [class.active]="isWorkSelected === $index">
+                            {{ workType }}
+                        </div>
+                    }
+                </div>
+            </div>
+
+            <!-- works -->
+            <div class="contains">
+                <div class="rw3">
+                    @for (work of works; track $index) {
+                        <div class="wk">
+                            <img [src]="work.workThumbnail" alt="">
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

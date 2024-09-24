@@ -1,0 +1,62 @@
+.navbar-setup {
+    margin: 0px;
+    padding: auto;
+    background-color: rgba(5, 7, 9, 1);
+
+    .container {
+        padding: 30px 60px;
+
+        .rw {
+
+            .rw1 {
+                gap: 10px;
+
+                img {
+                    width: 54px;
+                    height: 51.06px;
+                }
+
+
+                header {
+                    font-size: 25px;
+                    font-weight: 500;
+                    color: white;
+                }
+
+                img:hover, header:hover {
+                    cursor: pointer;
+                }
+            }
+
+            .rw2 {
+
+                ul {
+                    display: flex;
+                    gap: 35px;
+                    text-decoration: none;
+                    list-style-type: none;
+
+                    li {
+                        font-size: 25px;
+                        font-weight: 500;
+                        color: white;
+
+
+                        &:hover{
+                            cursor: pointer;
+                        }
+
+                        &.hire-me {
+                            padding: 5px 15px;
+                            border-radius: 50px;
+                            background: linear-gradient(261.95deg, #7A48E0 21.88%, #9B6FF4 80.42%);
+                            color: white;
+                            font-size: 20px;
+                            font-weight: 400;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,32 @@
+<div class="service-setup">
+    <div class="container">
+        <div class="col">
+            <header>My Quality Services</header>
+            <p>
+                We convert your ideas and  wishes into a unique and visually appealing  designs that 
+                inspires you and your customers.
+            </p>
+
+            <div class="services">
+                <div class="divider"></div>
+                @for (service of services; track $index) {
+                    <div class="rw">
+                        <div class="rw1">
+                            <div class="numbers">
+                                0{{ $index + 1 }}
+                            </div>
+                            <div class="title">
+                                <h2>{{ service.serviceTitle }}</h2>
+                            </div>
+                            <div class="description">
+                                <h3>{{ service.serviceDescription }}</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                }
+            </div>
+
+        </div>
+    </div>
+</div>

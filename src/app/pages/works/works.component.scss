@@ -1,0 +1,83 @@
+.work-setup {
+    margin: 0;
+    padding: auto;
+    z-index: 1000;
+    box-sizing: 0px;
+
+    .container {
+        padding: 40px 60px;
+
+        .col {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            header {
+                font-family: "Nexa";
+                font-size: 60px;
+                font-weight: 900;
+                line-height: 90.96px;
+                text-align: left;
+                background: linear-gradient(270deg, #DFD1FD 32.82%, #8D58F8 79.38%);
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
+            p {
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 30px;
+                text-align: center;
+
+            }
+
+            .contain {
+                background: rgba(15, 7, 21, 1);
+                border-radius: 50px;
+                margin-top: 20px;
+
+                .rw1 {
+                    
+
+                    .type {
+                        font-size: 20px;
+                        font-weight: 400;
+                        line-height: 30px;
+                        text-align: center;
+                        color: white;
+                        padding: 8px 15px;
+                        border-radius: 50px;
+
+                        &:hover {
+                            cursor: pointer;
+                            background: linear-gradient(270deg, #361C6A 0%, #5530A0 44.51%, #7041CF 89.02%);
+                        }
+                    }
+
+                    .active {
+                        background: linear-gradient(270deg, #361C6A 0%, #5530A0 44.51%, #7041CF 89.02%);
+                    }
+                }
+            }
+
+            .contains {
+                
+                .rw3 {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 16px;
+
+                    .wk {
+
+                        .img {
+                            width: 100%;
+                            height: 392px;
+                            opacity: 1px;
+                            border-radius: 10px 0px 0px 0px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
