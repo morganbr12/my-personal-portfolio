@@ -18,7 +18,6 @@
                     height: 51.06px;
                 }
 
-
                 header {
                     font-size: 25px;
                     font-weight: 500;
@@ -42,12 +41,23 @@
                         font-size: 25px;
                         font-weight: 500;
                         color: white;
-
-
-                        &:hover{
+                        position: relative;
+                    
+                        &:hover {
                             cursor: pointer;
+                            
+                            // Simulate a gradient underline using ::after
+                            &::after {
+                                content: '';
+                                position: absolute;
+                                left: 0;
+                                bottom: -4px;  // Adjust position for underline
+                                width: 100%;
+                                height: 2px;  // Thickness of the underline
+                                background: linear-gradient(261.95deg, #7A48E0 21.88%, #9B6FF4 80.42%);
+                            }
                         }
-
+                    
                         &.hire-me {
                             padding: 5px 15px;
                             border-radius: 50px;
@@ -55,8 +65,19 @@
                             color: white;
                             font-size: 20px;
                             font-weight: 400;
+                            text-decoration: none; 
+
+                            &::after {
+                                content: '';
+                                position: absolute;
+                                left: 0;
+                                bottom: 0px;  // Adjust position for underline
+                                width: 0px;
+                                height: 0px;  // Thickness of the underline
+                            }
                         }
                     }
+                    
                 }
             }
         }

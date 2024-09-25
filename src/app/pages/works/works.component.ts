@@ -50,14 +50,24 @@ export class WorksComponent {
       workDescription: "",
     },
     {
-      workType: "UI/UX",
+      workType: "Graphic Design",
       workTitle: "runners",
       workThumbnail: "assets/work/runners.png",
       workDescription: "",
     },
   ];
 
+  filteredWorks: any[] = [...this.works];
+
   onWorkTypeSelected(type: String, index: number): void {
     this.isWorkSelected = index;
+
+    if (type === "All") {
+      this.filteredWorks = [...this.works];
+    } else {
+      this.filteredWorks = this.works.filter(work => work.workType === type);
+      console.log(this.filteredWorks);
+    }
+
   }
 }

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 .work-setup {
     margin: 0;
     padding: 0;
@@ -15,8 +17,8 @@
             align-items: center;
 
             header {
-                font-family: "Nexa";
-                font-size: 60px;
+                font-family: "Montserrat";
+                font-size: 40px;
                 font-weight: 900;
                 line-height: 60px; 
                 text-align: center;
@@ -33,12 +35,14 @@
                 line-height: 20px;
                 text-align: center;
                 margin-bottom: 20px;
+                color: white;
             }
 
             .contain {
                 background: rgba(15, 7, 21, 1);
                 border-radius: 50px;
                 margin-bottom: 20px;
+                margin-top: 20px;
 
                 .rw1 {
                     display: flex;

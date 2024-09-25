@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 .home-setup {
     margin: 0px;
     padding: auto;
@@ -20,25 +22,27 @@
 
                 .col-1 {
                     h3 {
-                        font-size: 40px;
-                        font-weight: 900;
+                        font-size: 30px;
+                        font-weight: 600;
                         color: white;
                     }
 
                     h1 {
                         max-width: 700px;
-                        font-family: Nexa;
-                        font-size: 80px;
+                        font-family: "Montserrat";
+                        font-size: 60px;
                         font-weight: 900;
-                        line-height: 100.28px;
+                        line-height: 70.28px;
                         text-align: left;
                         background: linear-gradient(269.59deg, #DFD1FD -3.44%, #8D58F8 63.64%);
                         background-clip: text;
                         -webkit-text-fill-color: transparent;
+                        animation: l1 5s linear infinite;
+                        clip-path: inset(0 100% 0 0);
                     }
 
                     p {
-                        font-family: Poppins;
+                        font-family: "Montserrat";
                         font-size: 20px;
                         font-weight: 400;
                         line-height: 30px;
@@ -97,7 +101,7 @@
 
                         .yr, .prj, .sti {
                             font-size: 80px;
-                            font-weight: 900;
+                            font-weight: 700;
                             color: white;
                         }
 
@@ -115,3 +119,5 @@
         }
     }
 }
+
+@keyframes l1 {to{clip-path: inset(0 -34% 0 0)}}
