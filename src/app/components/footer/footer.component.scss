@@ -8,6 +8,11 @@
     .container { 
         padding: 30px 0px;
 
+        @media (max-width: 460px) {
+            padding: 10px;
+        }
+
+
         .col {
             display: flex;
             flex-direction: column;
@@ -15,6 +20,10 @@
             justify-content: center;
 
             .rw2 {
+
+                @media (max-width: 460px) {
+                    display: none;
+                }
 
 
                 ul {
@@ -44,6 +53,12 @@
                 font-weight: 600;
                 font-size: 25px;
                 color: white;
+
+                @media (max-width: 460px) {
+                    font-weight: 600;
+                    font-size: 15px;
+                    text-align: center;
+                }
             }
         }
     }

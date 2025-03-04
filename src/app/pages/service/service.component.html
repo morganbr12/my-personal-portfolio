@@ -12,11 +12,13 @@
                 @for (service of services; track $index) {
                     <div class="rw">
                         <div class="rw1">
-                            <div class="numbers">
-                                0{{ $index + 1 }}
-                            </div>
-                            <div class="title">
-                                <h2>{{ service.serviceTitle }}</h2>
+                            <div class="rw2">
+                                <div class="numbers">
+                                    0{{ $index + 1 }}
+                                </div>
+                                <div class="title">
+                                    <h2>{{ service.serviceTitle }}</h2>
+                                </div>
                             </div>
                             <div class="description">
                                 <h3>{{ service.serviceDescription }}</h3>

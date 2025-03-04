@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
 
 .work-setup {
     margin: 0;
@@ -7,62 +7,85 @@
     box-sizing: border-box;
     background-image: url("/../assets/work/my-recent-works.svg");
     background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
 
     .container {
-        padding: 40px 60px;
+        padding: 40px 20px;
+        max-width: 900px;
+        
+        @media (max-width: 460px) {
+            padding: 20px;
+        }
 
         .col {
             display: flex;
             flex-direction: column;
             align-items: center;
+            text-align: center;
 
             header {
-                font-family: "Montserrat";
-                font-size: 40px;
+                font-family: "Montserrat", sans-serif;
+                font-size: 34px;
                 font-weight: 900;
-                line-height: 60px; 
-                text-align: center;
                 background: linear-gradient(270deg, #DFD1FD 32.82%, #8D58F8 79.38%);
-                background-clip: text;
                 -webkit-background-clip: text;
+                background-clip: text;
                 -webkit-text-fill-color: transparent;
-                margin-bottom: 10px; 
+                margin-bottom: 10px;
+
+                @media (max-width: 460px) {
+                    font-size: 28px;
+                }
             }
 
             p {
-                font-size: 20px;
+                font-size: 18px;
                 font-weight: 400;
-                line-height: 20px;
-                text-align: center;
-                margin-bottom: 20px;
+                line-height: 24px;
                 color: white;
+                max-width: 600px;
             }
 
             .contain {
                 background: rgba(15, 7, 21, 1);
                 border-radius: 50px;
-                margin-bottom: 20px;
-                margin-top: 20px;
+                margin: 20px 0;
+                padding: 10px 15px;
+                display: flex;
+                justify-content: center;
 
                 .rw1 {
                     display: flex;
-                    justify-content: center; 
                     flex-wrap: wrap;
+                    gap: 10px;
 
+                    @media (max-width: 460px) {
+                        gap: 0px;
+                    }
+                    
                     .type {
-                        font-size: 18px;
+                        font-size: 16px;
                         font-weight: 400;
-                        line-height: 30px;
-                        text-align: center;
-                        color: white;
-                        padding: 8px 15px;
+                        padding: 8px 12px;
                         border-radius: 50px;
-
+                        color: white;
+                    
+                        @media (max-width: 460px) {
+                            gap: 0px;
+                            max-width: 8ch; // Limit to 7 characters
+                            white-space: nowrap; // Prevent text from wrapping
+                            overflow: hidden; // Hide excess text
+                            text-overflow: ellipsis; // Add "..." for clipped text
+                        }
+                    
                         &:hover {
                             cursor: pointer;
                             background: linear-gradient(270deg, #361C6A 0%, #5530A0 44.51%, #7041CF 89.02%);
                         }
                     }
+                    
 
                     .active {
                         background: linear-gradient(270deg, #361C6A 0%, #5530A0 44.51%, #7041CF 89.02%);
@@ -72,32 +95,36 @@
 
             .contains {
                 display: flex;
-                justify-content: center; 
+                justify-content: center;
                 margin-top: 20px;
+                width: 100%;
 
                 .rw3 {
                     display: grid;
-                    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); 
-                    gap: 54px; 
-                    width: 100%; 
+                    grid-template-columns: 1fr; 
+                    gap: 20px; 
+                    width: 100%;
+
+                    @media (min-width: 600px) {
+                        grid-template-columns: repeat(2, 1fr);
+                    }
 
                     .wk {
-                        background: linear-gradient(270deg, #2E165A 32.82%, #8a60df 59.38%);; 
-                        padding: 0px 20px; 
-                        border-radius: 10px; 
+                        background: linear-gradient(270deg, #2E165A 32.82%, #8a60df 59.38%);
+                        padding: 10px;
+                        border-radius: 10px;
                         box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-                        
+                        transition: 0.3s;
+
                         &:hover {
-                            padding: 0px 10px;  
+                            transform: scale(1.02);
                             cursor: pointer;
-                            overflow: hidden;
                         }
 
                         img {
                             width: 100%;
-                            height: 100%;
-                            opacity: 1; 
-                            border-radius: 10px; 
+                            height: auto;
+                            border-radius: 10px;
                             object-fit: cover;
                         }
                     }

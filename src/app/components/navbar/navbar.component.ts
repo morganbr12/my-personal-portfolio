@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { ImagesService } from '../../services/images.service';
 
 @Component({
     selector: 'app-navbar',
@@ -7,6 +8,8 @@ import { Component } from '@angular/core';
     styleUrl: './navbar.component.scss'
 })
 export class NavbarComponent {
+
+  _images = inject(ImagesService);
 
   gabiEmail: String = 'christiancalculus@gmail.com';
 }
