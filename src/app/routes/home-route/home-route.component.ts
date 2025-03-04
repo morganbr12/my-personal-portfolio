@@ -5,16 +5,15 @@ import { NavbarComponent } from '../../components/navbar/navbar.component';
 import { HomeComponent } from '../../pages/home/home.component';
 
 @Component({
-  selector: 'app-home-route',
-  standalone: true,
-  imports: [
-    NavbarComponent,
-    FooterComponent,
-    HomeComponent,
-    CommonModule,
-],
-  templateUrl: './home-route.component.html',
-  styleUrl: './home-route.component.scss'
+    selector: 'app-home-route',
+    imports: [
+        NavbarComponent,
+        FooterComponent,
+        HomeComponent,
+        CommonModule,
+    ],
+    templateUrl: './home-route.component.html',
+    styleUrl: './home-route.component.scss'
 })
 export class HomeRouteComponent {
 

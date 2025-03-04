@@ -3,11 +3,10 @@ import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 
 @Component({
-  selector: 'app-contacts',
-  standalone: true,
-  imports: [CommonModule, ReactiveFormsModule,],
-  templateUrl: './contacts.component.html',
-  styleUrl: './contacts.component.scss'
+    selector: 'app-contacts',
+    imports: [CommonModule, ReactiveFormsModule,],
+    templateUrl: './contacts.component.html',
+    styleUrl: './contacts.component.scss'
 })
 export class ContactsComponent {
 

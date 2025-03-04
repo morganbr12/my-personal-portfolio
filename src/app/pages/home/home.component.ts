@@ -6,11 +6,10 @@ import { SkillsComponent } from "../skills/skills.component";
 import { ContactsComponent } from "../contacts/contacts.component";
 
 @Component({
-  selector: 'app-home',
-  standalone: true,
-  imports: [ServiceComponent, WorksComponent, ExperienceComponent, SkillsComponent, ContactsComponent],
-  templateUrl: './home.component.html',
-  styleUrl: './home.component.scss'
+    selector: 'app-home',
+    imports: [ServiceComponent, WorksComponent, ExperienceComponent, SkillsComponent, ContactsComponent],
+    templateUrl: './home.component.html',
+    styleUrl: './home.component.scss'
 })
 export class HomeComponent {
 
