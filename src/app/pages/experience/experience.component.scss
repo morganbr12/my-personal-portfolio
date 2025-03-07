@@ -8,6 +8,7 @@
 
     .container {
         padding: 40px 60px;
+
         @media (max-width: 460px) {
             padding: 20px 10px;
         }
@@ -27,7 +28,7 @@
                 }
 
                 img {
-                    
+
                     @media (max-width: 460px) {
                         height: 40px;
                         width: 40px;
@@ -37,7 +38,7 @@
                 header {
                     background: linear-gradient(270deg, #DFD1FD 32.82%, #8D58F8 79.38%);
                     background-clip: text;
-                    -webkit-text-fill-color: transparent; 
+                    -webkit-text-fill-color: transparent;
                     font-family: "Montserrat";
                     font-weight: 900;
                     font-size: 40px;
@@ -66,27 +67,47 @@
                     }
 
                     p {
-                        font-family: "Nexa";
+                        font-family: "Montserrat";
                         font-weight: 900;
                         font-size: 30px;
                         text-align: left;
                         color: white;
+
+                        @media (max-width: 460px) {
+                            font-family: "Montserrat";
+                            font-weight: 700;
+                            font-size: 20px;
+                        }
+
                     }
 
                     h3 {
-                        font-family: "Nexa";
+                        font-family: "Montserrat";
                         font-weight: 900;
                         font-size: 40px;
                         text-align: left;
                         color: rgba(255, 255, 255, 1);
+
+                        @media (max-width: 460px) {
+                            font-family: "Montserrat";
+                            font-weight: 700;
+                            font-size: 25px;
+                        }
                     }
 
                     h4 {
                         font-size: 22px;
                         font-weight: 400;
                         line-height: 33px;
-                        text-align: left;   
-                        color: white;                      
+                        text-align: left;
+                        color: white;
+
+                        @media (max-width: 460px) {
+                            font-family: "Montserrat";
+                            font-size: 18px;
+                            font-weight: 400;
+                            line-height: 23px;
+                        }
                     }
                 }
             }
